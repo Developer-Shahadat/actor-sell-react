@@ -64,9 +64,9 @@ const Home = () => {
               </div>
               <button
                 onClick={() => handleCart(actor)}
-                className="btn mx-32 mt-4 bg-red-400 p-2 rounded-lg text-white"
+                className="btn mx-28 mt-4 bg-red-400 p-2 rounded-lg text-white"
               >
-                Primary
+                ADD NOW
               </button>
             </div>
           </div>
