@@ -20,7 +20,7 @@ const Home = () => {
     const isExist = item.find((card)=> card.id == actorId.id)
     let cost = actorId.salary;
     if(isExist){
-        alert('already Booked')
+        alert('Already this person booked')
     }
     
     else{
@@ -30,7 +30,7 @@ const Home = () => {
         );
         const totalRemaining = 20000 - cost;
         if(cost > 20000){
-            alert('Taka Sesh')
+            alert("Can't be more than 20000$")
         }
         else{
             setTotalCost(cost);
@@ -42,7 +42,7 @@ const Home = () => {
   };
 
   return (
-    <div className="flex">
+    <div className="flex gap-10">
       <div className="w-3/4 grid grid-cols-3">
         {allActor.map((actor) => (
           <div
@@ -60,7 +60,7 @@ const Home = () => {
               </div>
               <div className="flex gap-4 mt-2 mx-20">
                 <p>Salary : {actor.salary}</p>
-                <p>{actor.role}</p>
+                <p>Role: {actor.role}</p>
               </div>
               <button
                 onClick={() => handleCart(actor)}

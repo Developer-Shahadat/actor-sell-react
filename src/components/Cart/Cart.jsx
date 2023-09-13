@@ -7,12 +7,12 @@ const Cart = ({item,totalCost,remaining}) => {
         <div className='mt-4 bg-slate-300 p-4 rounded-lg'>
             
             
-            <h1 className='text-2xl'>Total Cart : {item.length}</h1>
-            <p>Total Cost: {totalCost}</p>
-            <p>Remaining : {remaining}</p>
+            <h1 className='text-2xl mt-2'>Total Actor : {item.length}</h1>
+            <p className='mt-2'>Total Cost: {totalCost}</p>
+            <p className='mt-2'>Remaining : {remaining}</p>
              {
                 item.map(actor =>(
-                    <li key={actor.id}>{actor.name}</li>
+                    <li className='mt-2' key={actor.id}>{actor.name}</li>
              ))}
             
         </div>
