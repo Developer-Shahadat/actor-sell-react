@@ -42,23 +42,23 @@ const Home = () => {
   };
 
   return (
-    <div className="flex gap-10">
+    <div className="flex gap-24">
       <div className="w-3/4 grid grid-cols-3">
         {allActor.map((actor) => (
           <div
             key={actor.id}
-            className="card w-96 bg-base-100 shadow-xl mt-6 pt-4 pb-4"
+            className="card w-80 bg-base-100 shadow-lg mt-6 pt-4 pb-4"
           >
             <div className="">
               <img
                 className="mx-28 avatar w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2"
                 src={actor.image}
               />
-              <div className=" mt-2 mx-28">
+              <div className="flex mt-2 mx-8 gap-4">
                 <h2>Name: {actor.name}</h2>
                 <p>Age: {actor.age}</p>
               </div>
-              <div className="flex gap-4 mt-2 mx-20">
+              <div className="flex gap-4 mt-2 mx-8">
                 <p>Salary : {actor.salary}</p>
                 <p>Role: {actor.role}</p>
               </div>
